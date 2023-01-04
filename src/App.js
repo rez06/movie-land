@@ -6,7 +6,7 @@ import MovieCard from './MovieCard';
 
 
 
-const API_URL = 'http://www.omdbapi.com/?apikey=ca3da410';
+const API_URL = 'https://www.omdbapi.com/?apikey=ca3da410';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -20,7 +20,7 @@ const App = () => {
   }
   
   useEffect(() => {
-    searchMovies('Matilda');
+    searchMovies('');
   }, []);
 
   return (
